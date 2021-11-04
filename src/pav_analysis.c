@@ -3,7 +3,7 @@
 
 float compute_power(const float *x, unsigned int N)
 {
-    float power = 0.0001;
+    float power = exp(-9);
     int i;
     for (i = 0; i <= N - 1; i++)
     {
