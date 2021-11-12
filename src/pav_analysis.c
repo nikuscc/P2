@@ -3,7 +3,7 @@
 
 float compute_power(const float *x, unsigned int N)
 {
-    float power = exp(-9);
+    float power = 1e-9;
     int i;
     for (i = 0; i <= N - 1; i++)
     {
@@ -34,3 +34,4 @@ float compute_zcr(const float *x, unsigned int N, float fm)
     }
     return (fm / 2.0) * (1.0 / (N - 1)) * zcr;
 }
+
