@@ -105,15 +105,23 @@ Ejercicios
   continuación, una captura de `wavesurfer` en la que se vea con claridad la señal temporal, el contorno de
   potencia y la tasa de cruces por cero, junto con el etiquetado manual de los segmentos.
 
+![image](https://user-images.githubusercontent.com/92537816/141653895-0f98c09a-ea3f-4604-aa0a-c711de8d7deb.png)
 
 - A la vista de la gráfica, indique qué valores considera adecuados para las magnitudes siguientes:
 
 	* Incremento del nivel potencia en dB, respecto al nivel correspondiente al silencio inicial, para
 	  estar seguros de que un segmento de señal se corresponde con voz.
-
+	
+	Observando el incremento en dB que supone el inicio de la voz, vemos que es de unos 15-16 dB.
+	
 	* Duración mínima razonable de los segmentos de voz y silencio.
+	
+	Duración mínima de segmento de voz: 0.1s
+	Duración mínima de segmento de voz: 0.03s
 
 	* ¿Es capaz de sacar alguna conclusión a partir de la evolución de la tasa de cruces por cero?
+	
+	Vemos que la tasa tiene valores bajos cuando hay sonidos sonoros (voz), y por lo tanto nos ayuda a detectar tramos de sonidos sordos con más precisión, al igual que tramos de silencio, donde la tasa tiene valores cambiantes.
 
 
 ### Desarrollo del detector de actividad vocal
@@ -144,6 +152,8 @@ Ejercicios
 
 - Si ha usado `docopt_c` para realizar la gestión de las opciones y argumentos del programa `vad`, inserte
   una captura de pantalla en la que se vea el mensaje de ayuda del programa.
+
+![image](https://user-images.githubusercontent.com/92537816/141653502-4f84129e-2526-484f-9f91-e4a7333d36fc.png)
 
 
 ### Contribuciones adicionales y/o comentarios acerca de la práctica

@@ -20,7 +20,10 @@ typedef struct
     char *alpha2;
     char *frames_ms;
     char *frames_mv;
+<<<<<<< HEAD
     char *number_init;
+=======
+>>>>>>> ad31e2d6fe006a1fb4840eeaf950497ea5cf0589
     char *input_wav;
     char *output_vad;
     char *output_wav;
@@ -41,11 +44,19 @@ const char help_message[] =
     "   -i FILE, --input-wav=FILE   WAVE file for voice activity detection\n"
     "   -o FILE, --output-vad=FILE  Label file with the result of VAD\n"
     "   -w FILE, --output-wav=FILE  WAVE file with silences cleared\n"
+<<<<<<< HEAD
     "   -N INT, --number-init=INT  Number of init frames\n"
     "   -f FLOAT, --alpha1=FLOAT  Parameter alpha1\n"
     "   -s FLOAT, --alpha2=FLOAT  Parameter alpha2\n"
     "   -a INT, --frames_mv=INT  Frames of Maybe Voice\n"
     "   -b INT, --frames_ms=INT  Frames of Maybe Silence\n"
+=======
+    "   -N INT, --number-init=INT  Number of init frames [default: 10]\n"
+    "   -f FLOAT, --alpha1=FLOAT  Parameter alpha1 [default: 1.7]\n"
+    "   -s FLOAT, --alpha2=FLOAT  Parameter alpha2 [default: 5.48]\n"
+    "   -a INT, --frames_mv=INT  Frames of Maybe Voice [default: 4]\n"
+    "   -b INT, --frames_ms=INT  Frames of Maybe Silence [default: 13]\n"
+>>>>>>> ad31e2d6fe006a1fb4840eeaf950497ea5cf0589
     "   -v, --verbose  Show debug information\n"
     "   -h, --help     Show this screen\n"
     "   --version      Show the version of the project\n"
@@ -394,12 +405,17 @@ int elems_to_args(Elements *elements, DocoptArgs *args, bool help,
 DocoptArgs docopt(int argc, char *argv[], bool help, const char *version)
 {
     DocoptArgs args = {
+<<<<<<< HEAD
         0, 0, 0, (char *)"1.5", (char *)"5.5", (char *)"15", (char *)"10", NULL,
         (char *)"10", NULL, NULL,
+=======
+        0, 0, 0, (char *)"9", NULL, NULL, NULL,
+>>>>>>> ad31e2d6fe006a1fb4840eeaf950497ea5cf0589
         usage_pattern, help_message};
     Tokens ts;
     Command commands[] = {};
     Argument arguments[] = {};
+<<<<<<< HEAD
     Option options[] = {{"-h", "--help", 0, 0, NULL},
                         {"-v", "--verbose", 0, 0, NULL},
                         {NULL, "--version", 0, 0, NULL},
@@ -413,6 +429,21 @@ DocoptArgs docopt(int argc, char *argv[], bool help, const char *version)
                         {"-w", "--output-wav", 1, 0, NULL}};
 
     Elements elements = {0, 0, 11, commands, arguments, options};
+=======
+    Option options[] = {
+        {"-h", "--help", 0, 0, NULL},
+        {"-v", "--verbose", 0, 0, NULL},
+        {NULL, "--version", 0, 0, NULL},
+        {"-f", "--alpha1", 1, 0, NULL},
+        {"-s", "--alpha2", 1, 0, NULL},
+        {"-b", "--frames_ms", 1, 0, NULL},
+        {"-a", "--frames_mv", 1, 0, NULL},
+        {"-i", "--input-wav", 1, 0, NULL},
+        {"-N", "--number-init", 1, 0, NULL},
+        {"-o", "--output-vad", 1, 0, NULL},
+        {"-w", "--output-wav", 1, 0, NULL}
+    Elements elements = {0, 0, 7, commands, arguments, options};
+>>>>>>> ad31e2d6fe006a1fb4840eeaf950497ea5cf0589
 
     ts = tokens_new(argc, argv);
     if (parse_args(&ts, &elements))

@@ -57,7 +57,11 @@ Features compute_features(const float *x, int N)
  * TODO: Init the values of vad_data
  */
 
+<<<<<<< HEAD
 VAD_DATA *vad_open(float rate, int number_init, float alpha1, float alpha2, int frames_mv, int frames_ms)
+=======
+VAD_DATA *vad_open(float rate, float alpha1, float alpha2, int frames_mv, int frames_ms, int number_init)
+>>>>>>> ad31e2d6fe006a1fb4840eeaf950497ea5cf0589
 {
   VAD_DATA *vad_data = malloc(sizeof(VAD_DATA));
   vad_data->state = ST_INIT;
@@ -70,7 +74,11 @@ VAD_DATA *vad_open(float rate, int number_init, float alpha1, float alpha2, int 
   vad_data->k0 = 0;
   vad_data->k1 = 0;
   vad_data->k2 = 0;
+<<<<<<< HEAD
   vad_data->frames_mv = frames_mv; // #frames waiting to go to voice
+=======
+  vad_data->frames_mv = frames_mv;     // #frames waiting to go to voice
+>>>>>>> ad31e2d6fe006a1fb4840eeaf950497ea5cf0589
   vad_data->frames_ms = frames_ms; // #max frames to return to voice
   vad_data->fr_und = 0;
   vad_data->min_back_voice_counter = 0;
@@ -80,6 +88,12 @@ VAD_DATA *vad_open(float rate, int number_init, float alpha1, float alpha2, int 
 
 VAD_STATE vad_close(VAD_DATA *vad_data, VAD_STATE state)
 {
+<<<<<<< HEAD
+=======
+  /* 
+   * TODO: decide what to do with the last undecided frames
+   */
+>>>>>>> ad31e2d6fe006a1fb4840eeaf950497ea5cf0589
   VAD_STATE state_result = vad_data->state;
   free(vad_data);
   return state_result;
@@ -126,6 +140,7 @@ VAD_STATE vad(VAD_DATA *vad_data, float *x)
   case ST_SILENCE:
     if (f.p > vad_data->k1)
       vad_data->state = ST_MV;
+<<<<<<< HEAD
     break;
 
   case ST_VOICE:
@@ -155,6 +170,32 @@ VAD_STATE vad(VAD_DATA *vad_data, float *x)
     {
       vad_data->fr_und = 0;
       vad_data->state = ST_SILENCE;
+=======
+    break;
+
+  case ST_MS:
+    if (vad_data->fr_und == vad_data->frames_ms)
+    {
+      vad_data->state = ST_SILENCE;
+      vad_data->fr_und = 0;
+    }
+    else if (f.p > vad_data->k2 && vad_data->fr_und < vad_data->frames_ms)
+    {
+      vad_data->state = ST_VOICE;
+      vad_data->fr_und = 0;
+    }
+    else
+    {
+      vad_data->fr_und++;
+    }
+    break;
+
+  case ST_MV:
+    if (vad_data->fr_und == vad_data->frames_mv)
+    {
+      vad_data->fr_und = 0;
+      vad_data->state = ST_SILENCE;
+>>>>>>> ad31e2d6fe006a1fb4840eeaf950497ea5cf0589
     }
     else if (f.p > vad_data->k2 && vad_data->fr_und < vad_data->frames_mv)
     {
