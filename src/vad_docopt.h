@@ -52,10 +52,10 @@ const char help_message[] =
     "   -b INT, --frames_ms=INT  Frames of Maybe Silence\n"
 =======
     "   -N INT, --number-init=INT  Number of init frames [default: 10]\n"
-    "   -f FLOAT, --alpha1=FLOAT  Parameter alpha1 [default: 1.7]\n"
-    "   -s FLOAT, --alpha2=FLOAT  Parameter alpha2 [default: 5.48]\n"
-    "   -a INT, --frames_mv=INT  Frames of Maybe Voice [default: 4]\n"
-    "   -b INT, --frames_ms=INT  Frames of Maybe Silence [default: 13]\n"
+    "   -f FLOAT, --alpha1=FLOAT  Parameter alpha1 [default: 1.5]\n"
+    "   -s FLOAT, --alpha2=FLOAT  Parameter alpha2 [default: 5.5]\n"
+    "   -a INT, --frames_mv=INT  Frames of Maybe Voice [default: 10]\n"
+    "   -b INT, --frames_ms=INT  Frames of Maybe Silence [default: 10]\n"
 >>>>>>> ad31e2d6fe006a1fb4840eeaf950497ea5cf0589
     "   -v, --verbose  Show debug information\n"
     "   -h, --help     Show this screen\n"
