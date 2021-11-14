@@ -119,7 +119,7 @@ En primer lugar hemos etiquetado manualmente las partes de voz y las de silencio
 	
 		Duración mínima de segmento de voz: 0.1s
 		
-		Duración mínima de segmento de voz: 0.03s
+		Duración mínima de segmento de silencio: 0.03s
 
 	* ¿Es capaz de sacar alguna conclusión a partir de la evolución de la tasa de cruces por cero?
 
