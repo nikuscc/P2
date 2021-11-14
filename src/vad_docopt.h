@@ -42,8 +42,8 @@ const char help_message[] =
 "   -o FILE, --output-vad=FILE  Label file with the result of VAD\n"
 "   -w FILE, --output-wav=FILE  WAVE file with silences cleared\n"
 "   -N INT, --number-init=INT  Number of init frames [default: 15]\n"
-"   -f FLOAT, --alpha1=FLOAT  Parameter alpha1 [default: 1.5]\n"
-"   -s FLOAT, --alpha2=FLOAT  Parameter alpha2 [default: 5.5]\n"
+"   -f FLOAT, --alpha1=FLOAT  Parameter alpha1 [default: 3]\n"
+"   -s FLOAT, --alpha2=FLOAT  Parameter alpha2 [default: 10]\n"
 "   -a INT, --frames_mv=INT  Frames of Maybe Voice [default: 10]\n"
 "   -b INT, --frames_ms=INT  Frames of Maybe Silence [default: 10]\n"
 "   -v, --verbose  Show debug information\n"
@@ -325,7 +325,7 @@ int elems_to_args(Elements *elements, DocoptArgs *args, bool help,
 
 DocoptArgs docopt(int argc, char *argv[], bool help, const char *version) {
     DocoptArgs args = {
-        0, 0, 0, (char*) "1.5", (char*) "5.5", (char*) "10", (char*) "10", NULL,
+        0, 0, 0, (char*) "3", (char*) "10", (char*) "10", (char*) "10", NULL,
         (char*) "15", NULL, NULL,
         usage_pattern, help_message
     };
