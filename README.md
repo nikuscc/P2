@@ -107,22 +107,24 @@ Ejercicios
 
 ![image](https://user-images.githubusercontent.com/92537816/141653895-0f98c09a-ea3f-4604-aa0a-c711de8d7deb.png)
 
+La captura corresponde al audio.wav que grabamos en clase para la práctica 1. 
+En primer lugar hemos etiquetado manualmente las partes de voz y las de silencio y con la práctica 1 calculamos la potencia y los cruces por cero. 
+
 - A la vista de la gráfica, indique qué valores considera adecuados para las magnitudes siguientes:
 
-	* Incremento del nivel potencia en dB, respecto al nivel correspondiente al silencio inicial, para
-	  estar seguros de que un segmento de señal se corresponde con voz.
+	* Incremento del nivel potencia en dB, respecto al nivel correspondiente al silencio inicial, para estar seguros de que un segmento de señal se corresponde con voz.
 	
-	Observando el incremento en dB que supone el inicio de la voz, vemos que es de unos 15-16 dB.
+	Tal y como podemos observar en el contorno de potencia, vemos que el nivel de silencio en media es aproximadamente de 15dB y el nivel de voz de unos 40dB. Así pues, tenemos un incremento de 25dB.
 	
 	* Duración mínima razonable de los segmentos de voz y silencio.
 	
-	Duración mínima de segmento de voz: 0.1s
-	Duración mínima de segmento de voz: 0.03s
+		Duración mínima de segmento de voz: 0.1s
+		
+		Duración mínima de segmento de silencio: 0.03s
 
 	* ¿Es capaz de sacar alguna conclusión a partir de la evolución de la tasa de cruces por cero?
-	
-	Vemos que la tasa tiene valores bajos cuando hay sonidos sonoros (voz), y por lo tanto nos ayuda a detectar tramos de sonidos sordos con más precisión, al igual que tramos de silencio, donde la tasa tiene valores cambiantes.
 
+	La tasa de curces por cero nos indica la existencia de consonantes sordas (con una tasa muy elevada), detección de un tramo de voz (tasa muy baja) y de silencio (una tasa de cruces por cero media).
 
 ### Desarrollo del detector de actividad vocal
 
@@ -132,12 +134,23 @@ Ejercicios
 - Inserte una gráfica en la que se vea con claridad la señal temporal, el etiquetado manual y la detección
   automática conseguida para el fichero grabado al efecto. 
 
+![image](https://user-images.githubusercontent.com/92537816/141691057-4fcd5f5f-912c-44c2-80af-9c0638dbfa35.png)
+La captura corresponde al audio pav_4171.wav del directorio db.v4/2014.
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
+
+Podemos ver que hay algunas diferencias pero que son mínimas, ya que se obtiene un 93.255% de exactitud. 
+
+![image](https://user-images.githubusercontent.com/92537816/141691087-4e857abb-bd3c-432d-9803-9df233df1816.png)
 
 - Evalúe los resultados sobre la base de datos `db.v4` con el script `vad_evaluation.pl` e inserte a 
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
+
+Tal y como podemos observar obtenemos un valor medio de 87,196%. La mayoria de los ficheros tienen un valor de detección que varia entre el 89% y 95% pero tenemos un mínimo en 16% y otros de valor 60%, es por eso que nos hace bajar tanto la media. 
+La causa de estos mínimos podria ser que el umbral no sea el más óptimo, ya que hay señales con segmentos de voz y silencio no muy elevadas y es complicado detectar correctamente donde se encuentra. 
+
+![image](https://user-images.githubusercontent.com/92537816/141692050-67dc00be-61e6-4211-a371-34a235afcc3c.png)
 
 
 ### Trabajos de ampliación
@@ -145,16 +158,20 @@ Ejercicios
 #### Cancelación del ruido en los segmentos de silencio
 
 - Si ha desarrollado el algoritmo para la cancelación de los segmentos de silencio, inserte una gráfica en
-  la que se vea con claridad la señal antes y después de la cancelación (puede que `wavesurfer` no sea la
-  mejor opción para esto, ya que no es capaz de visualizar varias señales al mismo tiempo).
+  la que se vea con claridad la señal antes y después de la cancelación (puede que `wavesurfer` no sea la mejor opción para esto, ya que no es capaz de visualizar varias señales al mismo tiempo).
+  
+  Tal y como podemos observar, los tramos de silencio se cancelan. 
+  ![image](https://user-images.githubusercontent.com/92022992/141692609-2d42a0bc-763d-4eee-9749-3f2817b9d266.png)
+  
+  ![image](https://user-images.githubusercontent.com/92022992/141692598-75d9c913-03b1-4c93-951a-bf76ad50388b.png)
+
 
 #### Gestión de las opciones del programa usando `docopt_c`
 
 - Si ha usado `docopt_c` para realizar la gestión de las opciones y argumentos del programa `vad`, inserte
   una captura de pantalla en la que se vea el mensaje de ayuda del programa.
 
-![image](https://user-images.githubusercontent.com/92537816/141653502-4f84129e-2526-484f-9f91-e4a7333d36fc.png)
-
+![image](https://user-images.githubusercontent.com/92022992/141693080-da1f3138-08c0-4848-8025-de424cf3270f.png)
 
 ### Contribuciones adicionales y/o comentarios acerca de la práctica
 
