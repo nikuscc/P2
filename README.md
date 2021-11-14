@@ -107,6 +107,7 @@ Ejercicios
 
 ![image](https://user-images.githubusercontent.com/92537816/141653895-0f98c09a-ea3f-4604-aa0a-c711de8d7deb.png)
 
+La captura corresponde al audio.wav que grabamos en clase para la práctica 1. 
 En primer lugar hemos etiquetado manualmente las partes de voz y las de silencio y con la práctica 1 calculamos la potencia y los cruces por cero. 
 
 - A la vista de la gráfica, indique qué valores considera adecuados para las magnitudes siguientes:
@@ -134,17 +135,17 @@ En primer lugar hemos etiquetado manualmente las partes de voz y las de silencio
   automática conseguida para el fichero grabado al efecto. 
 
 ![image](https://user-images.githubusercontent.com/92537816/141691057-4fcd5f5f-912c-44c2-80af-9c0638dbfa35.png)
-
+La captura corresponde al audio pav_4171.wav del directorio db.v4/2014.
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
-![image](https://user-images.githubusercontent.com/92537816/141691087-4e857abb-bd3c-432d-9803-9df233df1816.png)
+Podemos ver que hay algunas diferencias pero que son mínimas, ya que se obtiene un 93% de exactitud. 
 
 - Evalúe los resultados sobre la base de datos `db.v4` con el script `vad_evaluation.pl` e inserte a 
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
 
-![image](https://user-images.githubusercontent.com/92537816/141691892-5a7882b4-7a01-4757-baf3-00d41722b960.png)
+![image](https://user-images.githubusercontent.com/92537816/141691087-4e857abb-bd3c-432d-9803-9df233df1816.png)
 
 
 ### Trabajos de ampliación
