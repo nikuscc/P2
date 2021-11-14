@@ -139,13 +139,16 @@ La captura corresponde al audio pav_4171.wav del directorio db.v4/2014.
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
-![image](https://user-images.githubusercontent.com/92537816/141691087-4e857abb-bd3c-432d-9803-9df233df1816.png)
+Podemos ver que hay algunas diferencias pero que son mínimas, ya que se obtiene un 93.255% de exactitud. 
 
-Podemos ver que hay algunas diferencias pero que son mínimas, ya que se obtiene un 93% de exactitud. 
+![image](https://user-images.githubusercontent.com/92537816/141691087-4e857abb-bd3c-432d-9803-9df233df1816.png)
 
 - Evalúe los resultados sobre la base de datos `db.v4` con el script `vad_evaluation.pl` e inserte a 
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
+
+Tal y como podemos observar obtenemos un valor medio de 87,196%. La mayoria de los ficheros tienen un valor de detección que varia entre el 89% y 95% pero tenemos un mínimo en 16% y otros de valor 60%, es por eso que nos hace bajar tanto la media. 
+La causa de estos mínimos podria ser que el umbral no sea el más óptimo, ya que hay señales con segmentos de voz y silencio no muy elevadas y sea complicado detectar correctamente donde se encuentra. 
 
 ![image](https://user-images.githubusercontent.com/92537816/141692050-67dc00be-61e6-4211-a371-34a235afcc3c.png)
 
@@ -155,8 +158,12 @@ Podemos ver que hay algunas diferencias pero que son mínimas, ya que se obtiene
 #### Cancelación del ruido en los segmentos de silencio
 
 - Si ha desarrollado el algoritmo para la cancelación de los segmentos de silencio, inserte una gráfica en
-  la que se vea con claridad la señal antes y después de la cancelación (puede que `wavesurfer` no sea la
-  mejor opción para esto, ya que no es capaz de visualizar varias señales al mismo tiempo).
+  la que se vea con claridad la señal antes y después de la cancelación (puede que `wavesurfer` no sea la mejor opción para esto, ya que no es capaz de visualizar varias señales al mismo tiempo).
+  
+  ![image](https://user-images.githubusercontent.com/92022992/141692609-2d42a0bc-763d-4eee-9749-3f2817b9d266.png)
+  
+  ![image](https://user-images.githubusercontent.com/92022992/141692598-75d9c913-03b1-4c93-951a-bf76ad50388b.png)
+
 
 #### Gestión de las opciones del programa usando `docopt_c`
 
