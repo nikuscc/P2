@@ -171,8 +171,7 @@ La causa de estos mínimos podria ser que el umbral no sea el más óptimo, ya q
 - Si ha usado `docopt_c` para realizar la gestión de las opciones y argumentos del programa `vad`, inserte
   una captura de pantalla en la que se vea el mensaje de ayuda del programa.
 
-![image](https://user-images.githubusercontent.com/92537816/141653502-4f84129e-2526-484f-9f91-e4a7333d36fc.png)
-
+![image](https://user-images.githubusercontent.com/92022992/141693080-da1f3138-08c0-4848-8025-de424cf3270f.png)
 
 ### Contribuciones adicionales y/o comentarios acerca de la práctica
 
