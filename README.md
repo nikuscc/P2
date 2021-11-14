@@ -139,13 +139,15 @@ La captura corresponde al audio pav_4171.wav del directorio db.v4/2014.
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
+![image](https://user-images.githubusercontent.com/92537816/141691087-4e857abb-bd3c-432d-9803-9df233df1816.png)
+
 Podemos ver que hay algunas diferencias pero que son mínimas, ya que se obtiene un 93% de exactitud. 
 
 - Evalúe los resultados sobre la base de datos `db.v4` con el script `vad_evaluation.pl` e inserte a 
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
 
-![image](https://user-images.githubusercontent.com/92537816/141691087-4e857abb-bd3c-432d-9803-9df233df1816.png)
+![image](https://user-images.githubusercontent.com/92537816/141692050-67dc00be-61e6-4211-a371-34a235afcc3c.png)
 
 
 ### Trabajos de ampliación
