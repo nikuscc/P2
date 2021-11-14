@@ -123,7 +123,7 @@ En primer lugar hemos etiquetado manualmente las partes de voz y las de silencio
 
 	* ¿Es capaz de sacar alguna conclusión a partir de la evolución de la tasa de cruces por cero?
 
-	La tasa de curces por cero nos indica la existencia de consonantes sordas (con una tasa muy elevada), deteccion de un tramo de voz (tasa muy baja) y de silencio (una tasa de cruces por cero media).
+	La tasa de curces por cero nos indica la existencia de consonantes sordas (con una tasa muy elevada), detección de un tramo de voz (tasa muy baja) y de silencio (una tasa de cruces por cero media).
 
 ### Desarrollo del detector de actividad vocal
 
