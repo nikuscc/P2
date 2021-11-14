@@ -107,7 +107,6 @@ Ejercicios
 
 ![image](https://user-images.githubusercontent.com/92537816/141653895-0f98c09a-ea3f-4604-aa0a-c711de8d7deb.png)
 
-Esta captura corresponde a el audio grabado en clase y utilitzado para la práctica 1. 
 En primer lugar hemos etiquetado manualmente las partes de voz y las de silencio y con la práctica 1 calculamos la potencia y los cruces por cero. 
 
 - A la vista de la gráfica, indique qué valores considera adecuados para las magnitudes siguientes:
@@ -134,12 +133,16 @@ En primer lugar hemos etiquetado manualmente las partes de voz y las de silencio
 - Inserte una gráfica en la que se vea con claridad la señal temporal, el etiquetado manual y la detección
   automática conseguida para el fichero grabado al efecto. 
 
+![image](https://user-images.githubusercontent.com/92537816/141690842-8be45377-43be-49d2-ae8f-5f9eab7653b5.png)
+
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
 - Evalúe los resultados sobre la base de datos `db.v4` con el script `vad_evaluation.pl` e inserte a 
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
+
+![image](https://user-images.githubusercontent.com/92537816/141690895-f8f3a737-d0a9-4e3a-a40c-d49d8d942d03.png)
 
 
 ### Trabajos de ampliación
@@ -156,6 +159,7 @@ En primer lugar hemos etiquetado manualmente las partes de voz y las de silencio
   una captura de pantalla en la que se vea el mensaje de ayuda del programa.
 
 ![image](https://user-images.githubusercontent.com/92537816/141653502-4f84129e-2526-484f-9f91-e4a7333d36fc.png)
+
 
 ### Contribuciones adicionales y/o comentarios acerca de la práctica
 
