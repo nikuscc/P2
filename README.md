@@ -148,7 +148,7 @@ Podemos ver que hay algunas diferencias pero que son mínimas, ya que se obtiene
   el resumen).
 
 Tal y como podemos observar obtenemos un valor medio de 87,196%. La mayoria de los ficheros tienen un valor de detección que varia entre el 89% y 95% pero tenemos un mínimo en 16% y otros de valor 60%, es por eso que nos hace bajar tanto la media. 
-La causa de estos mínimos podria ser que el umbral no sea el más óptimo, ya que hay señales con segmentos de voz y silencio no muy elevadas y sea complicado detectar correctamente donde se encuentra. 
+La causa de estos mínimos podria ser que el umbral no sea el más óptimo, ya que hay señales con segmentos de voz y silencio no muy elevadas y es complicado detectar correctamente donde se encuentra. 
 
 ![image](https://user-images.githubusercontent.com/92537816/141692050-67dc00be-61e6-4211-a371-34a235afcc3c.png)
 
@@ -160,6 +160,7 @@ La causa de estos mínimos podria ser que el umbral no sea el más óptimo, ya q
 - Si ha desarrollado el algoritmo para la cancelación de los segmentos de silencio, inserte una gráfica en
   la que se vea con claridad la señal antes y después de la cancelación (puede que `wavesurfer` no sea la mejor opción para esto, ya que no es capaz de visualizar varias señales al mismo tiempo).
   
+  Tal y como podemos observar, los tramos de silencio se cancelan. 
   ![image](https://user-images.githubusercontent.com/92022992/141692609-2d42a0bc-763d-4eee-9749-3f2817b9d266.png)
   
   ![image](https://user-images.githubusercontent.com/92022992/141692598-75d9c913-03b1-4c93-951a-bf76ad50388b.png)
