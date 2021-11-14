@@ -157,8 +157,6 @@ En primer lugar hemos etiquetado manualmente las partes de voz y las de silencio
 
 ![image](https://user-images.githubusercontent.com/92537816/141653502-4f84129e-2526-484f-9f91-e4a7333d36fc.png)
 
-Esta captura corresponde al audio pav_4171.wav.
-
 ### Contribuciones adicionales y/o comentarios acerca de la práctica
 
 - Indique a continuación si ha realizado algún tipo de aportación suplementaria (algoritmos de detección o 
