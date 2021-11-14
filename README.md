@@ -138,11 +138,13 @@ En primer lugar hemos etiquetado manualmente las partes de voz y las de silencio
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
+![image](https://user-images.githubusercontent.com/92537816/141691087-4e857abb-bd3c-432d-9803-9df233df1816.png)
+
 - Evalúe los resultados sobre la base de datos `db.v4` con el script `vad_evaluation.pl` e inserte a 
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
 
-![image](https://user-images.githubusercontent.com/92537816/141691087-4e857abb-bd3c-432d-9803-9df233df1816.png)
+![image](https://user-images.githubusercontent.com/92537816/141691892-5a7882b4-7a01-4757-baf3-00d41722b960.png)
 
 
 ### Trabajos de ampliación
