@@ -20,6 +20,7 @@ typedef struct
     char *alpha2;
     char *frames_ms;
     char *frames_mv;
+    char *number_init;
     char *input_wav;
     char *output_vad;
     char *output_wav;
@@ -393,24 +394,26 @@ int elems_to_args(Elements *elements, DocoptArgs *args, bool help,
 DocoptArgs docopt(int argc, char *argv[], bool help, const char *version)
 {
     DocoptArgs args = {
-        0, 0, 0, (char *)"9", NULL, NULL, NULL,
+        0, 0, 0, (char*) "1.5", (char*) "5.5", (char*) "15", (char*) "10", NULL,
+        (char*) "10", NULL, NULL,
         usage_pattern, help_message};
     Tokens ts;
     Command commands[] = {};
     Argument arguments[] = {};
-    Option options[] = {
-        {"-h", "--help", 0, 0, NULL},
-        {"-v", "--verbose", 0, 0, NULL},
-        {NULL, "--version", 0, 0, NULL},
-        {"-f", "--alpha1", 1, 0, NULL},
-        {"-s", "--alpha2", 1, 0, NULL},
-        {"-b", "--frames_ms", 1, 0, NULL},
-        {"-a", "--frames_mv", 1, 0, NULL},
-        {"-i", "--input-wav", 1, 0, NULL},
-        {"-N", "--number-init", 1, 0, NULL},
-        {"-o", "--output-vad", 1, 0, NULL},
-        {"-w", "--output-wav", 1, 0, NULL}
-    Elements elements = {0, 0, 7, commands, arguments, options};
+    Option options[] = { {"-h", "--help", 0, 0, NULL},
+                         {"-v", "--verbose", 0, 0, NULL},
+                         {NULL, "--version", 0, 0, NULL},
+                         {"-f", "--alpha1", 1, 0, NULL},
+                         {"-s", "--alpha2", 1, 0, NULL},
+                         {"-b", "--frames_ms", 1, 0, NULL},
+                         {"-a", "--frames_mv", 1, 0, NULL},
+                         {"-i", "--input-wav", 1, 0, NULL},
+                         {"-N", "--number-init", 1, 0, NULL},
+                         {"-o", "--output-vad", 1, 0, NULL},
+                         {"-w", "--output-wav", 1, 0, NULL}
+    };
+
+    Elements elements = {0, 0, 11, commands, arguments, options};
 
     ts = tokens_new(argc, argv);
     if (parse_args(&ts, &elements))
