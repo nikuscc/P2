@@ -133,7 +133,7 @@ En primer lugar hemos etiquetado manualmente las partes de voz y las de silencio
 - Inserte una gráfica en la que se vea con claridad la señal temporal, el etiquetado manual y la detección
   automática conseguida para el fichero grabado al efecto. 
 
-![image](https://user-images.githubusercontent.com/92537816/141690842-8be45377-43be-49d2-ae8f-5f9eab7653b5.png)
+![image](https://user-images.githubusercontent.com/92537816/141691057-4fcd5f5f-912c-44c2-80af-9c0638dbfa35.png)
 
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
@@ -142,7 +142,7 @@ En primer lugar hemos etiquetado manualmente las partes de voz y las de silencio
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
 
-![image](https://user-images.githubusercontent.com/92537816/141690895-f8f3a737-d0a9-4e3a-a40c-d49d8d942d03.png)
+![image](https://user-images.githubusercontent.com/92537816/141691087-4e857abb-bd3c-432d-9803-9df233df1816.png)
 
 
 ### Trabajos de ampliación
