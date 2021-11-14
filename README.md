@@ -105,8 +105,7 @@ Ejercicios
   continuación, una captura de `wavesurfer` en la que se vea con claridad la señal temporal, el contorno de
   potencia y la tasa de cruces por cero, junto con el etiquetado manual de los segmentos.
 
-![image](https://user-images.githubusercontent.com/92537816/141650779-aa495734-6334-42e8-8fa6-e0f82c7900e3.png)
-
+![image](https://user-images.githubusercontent.com/92537816/141653895-0f98c09a-ea3f-4604-aa0a-c711de8d7deb.png)
 
 - A la vista de la gráfica, indique qué valores considera adecuados para las magnitudes siguientes:
 
@@ -153,6 +152,8 @@ Ejercicios
 
 - Si ha usado `docopt_c` para realizar la gestión de las opciones y argumentos del programa `vad`, inserte
   una captura de pantalla en la que se vea el mensaje de ayuda del programa.
+
+![image](https://user-images.githubusercontent.com/92537816/141653502-4f84129e-2526-484f-9f91-e4a7333d36fc.png)
 
 
 ### Contribuciones adicionales y/o comentarios acerca de la práctica
