@@ -107,6 +107,7 @@ Ejercicios
 
 ![image](https://user-images.githubusercontent.com/92537816/141653895-0f98c09a-ea3f-4604-aa0a-c711de8d7deb.png)
 
+Esta captura corresponde a el audio grabado en clase y utilitzado para la práctica 1. 
 En primer lugar hemos etiquetado manualmente las partes de voz y las de silencio y con la práctica 1 calculamos la potencia y los cruces por cero. 
 
 - A la vista de la gráfica, indique qué valores considera adecuados para las magnitudes siguientes:
@@ -156,6 +157,7 @@ En primer lugar hemos etiquetado manualmente las partes de voz y las de silencio
 
 ![image](https://user-images.githubusercontent.com/92537816/141653502-4f84129e-2526-484f-9f91-e4a7333d36fc.png)
 
+Esta captura corresponde al audio pav_4171.wav.
 
 ### Contribuciones adicionales y/o comentarios acerca de la práctica
 
